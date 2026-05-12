@@ -1,175 +1,247 @@
-# MSDS 458 Final Project – Math Problem Classification
+# MSDS-458 AI & Deep Learning Projects
 
-## Overview
+This repository contains a collection of projects completed for the Northwestern University MSDS 458 course on Artificial Intelligence and Deep Learning. The projects explore a range of machine learning and deep learning techniques including exploratory analysis, computer vision, natural language processing, and text classification.
 
-This repository contains a final project notebook for MSDS 458 focused on **multi-class classification of mathematical problems** using deep learning and transformer-based NLP techniques. The project evaluates a series of experiments ranging from traditional LSTM architectures to BERT and MathBERT feature extraction and fine-tuning approaches.
-
-The notebook explores:
-
-* Exploratory Data Analysis (EDA)
-* Text vectorization strategies
-* Embedding generation with BERT and MathBERT
-* Sequential deep learning models (LSTM)
-* Transformer-based architectures
-* Transfer learning and fine-tuning
-* Model evaluation and visualization
-
----
-
-## Dataset
-
-The project uses the **KAChallenges Series 1: Classifying Math Problems** dataset.
-
-The dataset contains mathematical questions labeled by topic/class, enabling supervised multi-class text classification.
-
-Expected files:
-
-* `train.csv`
-* `test.csv`
-* `solution.csv`
-
-The notebook originally references Google Drive paths from Google Colab. These paths may need to be updated for local execution.
-
----
-
-## Project Structure
+## Repository Structure
 
 ```text
-MSDS_458_Final_project_.ipynb
-README.md
+MSDS-458-AI-DeepLearning/
+│
+├── MINSTExploratoryClassification/
+├── cifar10Classification/
+├── agNewsClassification/
+└── mathTextClassification/
 ```
 
-The notebook is organized into the following sections:
+---
 
-1. Imports and environment setup
-2. Visualization helper functions
-3. Dataset loading and exploration
-4. Vectorization and statistical EDA
-5. BERT embedding analysis
-6. MathBERT embedding analysis
-7. Deep learning experiments
-8. Model evaluation and plotting
+# Projects
+
+## 1. MINSTExploratoryClassification
+
+### Overview
+
+This project introduces foundational image classification concepts using the MNIST handwritten digit dataset. The notebook explores preprocessing techniques, neural network architecture design, model training, and evaluation for classifying handwritten digits.
+
+### Contents
+
+* `Submission_Butler_MSDS458_Assignment_01.ipynb`
+
+  * Main notebook containing data exploration, preprocessing, model development, training, and evaluation.
+* `MSDS_458_Assignment_1_Report_Butler.docx`
+
+  * Written report summarizing methodology, experimentation, results, and conclusions.
+
+### Topics Covered
+
+* Neural networks
+* Image preprocessing
+* Classification metrics
+* TensorFlow / Keras workflows
+* Exploratory data analysis
+
+### Dataset
+
+* MNIST handwritten digit dataset
+
+### Skills Demonstrated
+
+* Building and training feedforward neural networks
+* Evaluating model performance
+* Data visualization and interpretation
+* Deep learning workflow fundamentals
 
 ---
 
-## Experiments Included
+## 2. cifar10Classification
 
-### LSTM-Based Models
+### Overview
 
-* Experiment 1: Baseline LSTM
-* Experiment 2: Modified LSTM architecture
-* Experiment 3: Additional LSTM tuning
-* Experiment 4: LSTM variation
-* Experiment 5: LSTM variation
+This project expands image classification techniques using the CIFAR-10 dataset, which contains color images across 10 object categories. The project focuses on convolutional neural networks (CNNs) and computer vision workflows.
 
-### BERT-Based Models
+### Contents
 
-* Experiment 6: BERT feature extraction with dense layers
-* Experiment 7: LSTM with BERT sequence embeddings
-* Experiment 8: Transformer with BERT embeddings
-* Experiment 12: Fine-tuning BERT
+* `Submission_Butler_MSDS458_Assignment_02.ipynb`
 
-### MathBERT-Based Models
+  * Main notebook containing CNN implementation, experimentation, and evaluation.
+* `MSDS_458_Assignment_2_Report_Butler.docx`
 
-* Experiment 9: MathBERT feature extraction with dense layers
-* Experiment 10: LSTM with MathBERT embeddings
-* Experiment 11: Transformer with MathBERT embeddings
-* Experiment 13: Fine-tuning MathBERT
+  * Supporting report discussing model design decisions, results, and analysis.
 
----
+### Topics Covered
 
-## Technologies Used
+* Convolutional Neural Networks (CNNs)
+* Computer vision
+* Image augmentation
+* Model optimization
+* Deep learning evaluation metrics
 
-### Languages & Frameworks
+### Dataset
 
-* Python
-* TensorFlow / Keras
-* Hugging Face Transformers
-* Scikit-learn
-* Pandas
-* NumPy
-* Matplotlib
-* NLTK
+* CIFAR-10 image dataset
 
-### NLP Models
+### Skills Demonstrated
 
-* BERT
-* MathBERT
+* CNN architecture implementation
+* Image classification pipelines
+* Hyperparameter tuning
+* Performance evaluation and visualization
 
 ---
 
-## Key Topics Explored
+## 3. agNewsClassification
+
+### Overview
+
+This project applies deep learning techniques to natural language processing using the AG News dataset. The objective is to classify news articles into predefined categories using neural network-based text classification methods.
+
+### Contents
+
+* `Submission_Butler_MSDS458_Assignment_03.ipynb`
+
+  * Main notebook containing text preprocessing, tokenization, model training, and evaluation.
+* `MSDS_458_Assignment_3_Report_Butler.docx`
+
+  * Written report documenting methodology, experimentation, and findings.
+
+### Topics Covered
 
 * Natural Language Processing (NLP)
-* Text classification
-* Transfer learning
-* Transformer architectures
-* Domain-specific embeddings
+* Text preprocessing
+* Tokenization and embeddings
 * Sequence modeling
-* Deep learning experimentation
+* Text classification
+
+### Dataset
+
+* AG News dataset
+
+### Skills Demonstrated
+
+* NLP preprocessing workflows
+* Deep learning for text classification
+* Embedding and sequence modeling techniques
+* Model evaluation and interpretation
 
 ---
 
-## Running the Notebook
+## 4. mathTextClassification
 
-### Recommended Environment
+### Overview
 
-The notebook was originally developed in **Google Colab** with GPU acceleration.
+This final project focuses on mathematical text classification using machine learning and deep learning techniques. The project explores how mathematical language and notation can be processed and classified using NLP methodologies.
 
-### Installation
+### Contents
 
-Install required packages before running:
+* `MSDS_458_Final_project.ipynb`
+
+  * Main notebook containing preprocessing, experimentation, modeling, and evaluation.
+* `MSDS_458_Final_Project.docx`
+
+  * Final written project report.
+* `MSDS_458_Oral_Presentation_Butler.pptx`
+
+  * Presentation slides summarizing the project.
+* `README.md.txt`
+
+  * Supplemental project-specific documentation.
+* `train.csv`
+
+  * Training dataset.
+* `test.csv`
+
+  * Testing dataset.
+* `solution.csv`
+
+  * Solution/output dataset.
+
+### Topics Covered
+
+* Mathematical language processing
+* NLP classification
+* Feature engineering
+* Deep learning for specialized text domains
+* Experimental model evaluation
+
+### Skills Demonstrated
+
+* Working with domain-specific text data
+* Data preprocessing and feature extraction
+* Building classification pipelines
+* Research-oriented experimentation
+
+---
+
+# Technologies Used
+
+* Python
+* Jupyter Notebook
+* TensorFlow
+* Keras
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-learn
+
+---
+
+# Learning Objectives
+
+These projects demonstrate practical applications of:
+
+* Deep learning model development
+* Neural network design
+* Computer vision workflows
+* Natural language processing
+* Model evaluation and experimentation
+* Data preprocessing pipelines
+* Research and technical reporting
+
+---
+
+# How to Run the Projects
+
+## Requirements
+
+Install the required Python libraries:
 
 ```bash
-pip install tensorflow transformers datasets nltk nlpaug scikit-learn matplotlib pandas numpy
+pip install tensorflow keras numpy pandas matplotlib scikit-learn jupyter
 ```
 
-### Launch
+## Running the Notebooks
 
-Open the notebook in:
+1. Clone the repository:
 
-* Jupyter Notebook
-* JupyterLab
-* Google Colab
+```bash
+git clone https://github.com/skarnw/MSDS-458-AI-DeepLearning.git
+```
 
-Then run cells sequentially.
+2. Navigate into the repository:
 
----
+```bash
+cd MSDS-458-AI-DeepLearning
+```
 
-## Notes
+3. Launch Jupyter Notebook:
 
-* Some paths are configured for Google Drive and may require modification.
-* GPU acceleration is strongly recommended for transformer fine-tuning experiments.
-* Several experiments compare classical sequence models against transformer-based transfer learning approaches.
+```bash
+jupyter notebook
+```
 
----
-
-## Learning Objectives
-
-This project demonstrates:
-
-* Building end-to-end NLP pipelines
-* Comparing embedding strategies
-* Evaluating transformer vs. recurrent architectures
-* Applying domain-specific language models
-* Conducting experimental deep learning workflows
+4. Open the desired project notebook and run the cells.
 
 ---
 
-## Future Improvements
+# Repository Purpose
 
-Potential extensions include:
-
-* Hyperparameter optimization
-* Cross-validation workflows
-* Additional transformer architectures
-* Error analysis by math topic
-* Model explainability techniques
-* Improved data augmentation
-* Deployment as an inference API
+This repository serves as a portfolio of deep learning and AI coursework demonstrating practical implementation of machine learning concepts across multiple domains including image recognition and natural language processing.
 
 ---
 
-## Author
+# Author
 
-Soraya Karimi Butler, MSDS 458 Final Project
+Soraya Karimi
+
+GitHub Repository:
+urlMSDS-458-AI-DeepLearning Repository[https://github.com/skarnw/MSDS-458-AI-DeepLearning](https://github.com/skarnw/MSDS-458-AI-DeepLearning)
